@@ -1,0 +1,7 @@
+base   wavedrom
+author Raymond Wu
+email  wusixin@gmail.com
+date   2018-07-01
+name   wavedrom Plugin
+desc   Create wavedrom charts with an incredibly simple syntax
+url    https://www.dokuwiki.org/plugin:wavedrom
