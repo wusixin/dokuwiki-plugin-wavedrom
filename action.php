@@ -24,16 +24,16 @@ class action_plugin_wavedrom extends DokuWiki_Action_Plugin
                             'type'    => 'text/javascript',
                             'charset' => 'utf-8',
                             '_data'   => '',
-                            'src'     => 'https://cdnjs.cloudflare.com/ajax/libs/wavedrom/1.6.2/skins/default.js');
+                            'src'     => 'https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.3/skins/default.js');
         $event->data['script'][] = array(
                             'type'    => 'text/javascript',
                             'charset' => 'utf-8',
                             '_data'   => '',
-                            'src'     => 'https://cdnjs.cloudflare.com/ajax/libs/wavedrom/1.6.2/wavedrom.min.js');
+                            'src'     => 'https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.3/wavedrom.min.js');
         $event->data['script'][] = array(
                             'type'    => 'text/javascript',
                             'charset' => 'utf-8',
-                            '_data'   => 'jQuery(function(){WaveDrom.ProcessAll()});');
+                            '_data'   => 'window.addEventListener(\'DOMContentLoaded\', WaveDrom.ProcessAll, false);');
         }
 
 }
